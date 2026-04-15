@@ -139,6 +139,14 @@ def _load_daily_revenue_data(daily_revenue_data):
         if not csv_path.exists():
             raise FileNotFoundError(f"CSV file not found: {csv_path}")
 
+    st.write("Base dir:", base_dir)
+    st.write("Requested path:", daily_revenue_data)
+    st.write("Resolved path:", csv_path)
+    st.write("Exists:", csv_path.exists())
+
+    df = pd.read_csv(csv_path)
+    ...
+
         df = pd.read_csv(csv_path)
 
     elif isinstance(daily_revenue_data, list):
