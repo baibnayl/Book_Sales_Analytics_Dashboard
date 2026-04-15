@@ -133,7 +133,14 @@ def _inject_styles():
 
 def _load_daily_revenue_data(daily_revenue_data):
     if isinstance(daily_revenue_data, (str, Path)):
-        df = pd.read_csv(daily_revenue_data)
+        base_dir = Path(__file__).resolve().parent
+        csv_path = (base_dir / daily_revenue_data).resolve()
+
+        if not csv_path.exists():
+            raise FileNotFoundError(f"CSV file not found: {csv_path}")
+
+        df = pd.read_csv(csv_path)
+
     elif isinstance(daily_revenue_data, list):
         df = pd.DataFrame(daily_revenue_data)
     else:
