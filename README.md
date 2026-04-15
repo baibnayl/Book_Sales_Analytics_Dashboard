@@ -141,18 +141,19 @@ The final dashboard was deployed online using <b>Streamlit</b>.
 
 ```
 .
-├── DATA1/
-│   ├── books.yaml
-│   ├── orders.parquet
-│   └── users.csv
-├── DATA2/
-│   ├── books.yaml
-│   ├── orders.parquet
-│   └── users.csv
-├── DATA3/
-│   ├── books.yaml
-│   ├── orders.parquet
-│   └── users.csv
+├── data
+│   ├── DATA1/
+│   │   ├── books.yaml
+│   │   ├── orders.parquet
+│   │   └── users.csv
+│   ├── DATA2/
+│   │   ├── books.yaml
+│   │   ├── orders.parquet
+│   │   └── users.csv
+│   ├── DATA3/
+│   │   ├── books.yaml
+│   │   ├── orders.parquet
+│   │   └── users.csv
 ├── notebooks/
 │   ├── task_Data_1.ipynb
 │   ├── task_Data_2.ipynb
