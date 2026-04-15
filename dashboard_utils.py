@@ -19,7 +19,7 @@ def render_dashboard(page_title: str, page_subtitle: str, data: dict):
 
     top_5_days_df = pd.DataFrame(top_5_days_data)
 
-    daily_revenue_df = pd.DataFrame(daily_revenue_data)
+    daily_revenue_df = pd.read_csv(daily_revenue_data)
     daily_revenue_df["date"] = pd.to_datetime(daily_revenue_df["date"])
     daily_revenue_df = daily_revenue_df.sort_values("date")
 
