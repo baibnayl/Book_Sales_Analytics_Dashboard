@@ -141,7 +141,7 @@ The final dashboard was deployed online using <b>Streamlit</b>.
 
 ```
 .
-├── data
+├── data/
 │   ├── DATA1/
 │   │   ├── books.yaml
 │   │   ├── orders.parquet
