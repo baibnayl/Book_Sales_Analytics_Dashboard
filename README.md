@@ -6,7 +6,7 @@ This project processes three separate datasets — <b>DATA1</b>, <b>DATA2</b>, a
 
 ## Project Overview
 
-Each dataset folder contains three files:
+Each dataset folder(in data directory) contains three files:
 
 - books.yaml — book metadata, including titles, authors, genres, publishers, and publication years
 - orders.parquet — order records, including purchased books, buyers, quantities, prices, and timestamps
@@ -16,7 +16,7 @@ The main goal of the project was to turn raw, inconsistent data into a clean ana
 
 ## Datasets
 
-The project works with three separate folders:
+The project works with three separate folders (they are in the data directory):
 
 - DATA1
 - DATA2
