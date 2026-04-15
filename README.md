@@ -157,6 +157,10 @@ The final dashboard was deployed online using <b>Streamlit</b>.
 │   ├── task_Data_1.ipynb
 │   ├── task_Data_2.ipynb
 │   └── task_Data_3.ipynb
+├── reports/
+│   ├── daily_revenue_data_1.csv
+│   ├── daily_revenue_data_2.csv
+│   └── daily_revenue_data_3.csv
 ├── app.py
 ├── dashboard_utils.py
 ├── dashboard_data.py
